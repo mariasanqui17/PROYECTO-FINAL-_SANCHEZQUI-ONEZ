@@ -1,0 +1,53 @@
+---
+title: "SEMANA 12"
+format: html
+editor: visual
+---
+
+## SEMANA 12
+
+COMO HALLAR LAS MEDIDAS DE DISPERSIÓN
+
+PASO1:
+
+```{r}
+#IMPORTAMOS LA BASE DE DATOS
+data <- read_csv("C:/Users/09yoo/Downloads/s07_glucosa_circun (1).csv")
+```
+
+MEDIDAS DE DISPERSIÓN
+
+```{r}
+#VARIANZA 
+var(data$edad,na.rm = TRUE)
+```
+
+```{r}
+#DESVIACIÓN DE ESTANDAR 
+sd(data$edad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO
+range(data$edad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO INTERCUARTILO
+IQR(data$edad,na.rm = TRUE)
+```
+
+```{r}
+#CUARTIL
+quantile(data$edad)
+```
+
+```{r}
+#VER LAS PRIMERAS 6 FILAS
+head(data)
+```
+
+```{r}
+#RESUMEN DE DATOS
+summary(data)
+```
