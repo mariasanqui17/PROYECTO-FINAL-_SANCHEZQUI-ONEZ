@@ -1,0 +1,36 @@
+---
+title: "SEMANA 10"
+author: "SANCHEZ QUIÑONEZ"
+format: html
+editor: visual
+---
+
+## SEMANA 10
+
+BUENAS TARDES DOCENTES, AQUI COMO CALCULAR LAS MEDIDAS DE TENDENCIA CENTRAL (MEDIA ARITMÉTICA, MEDIANA, MODA)
+
+```{r}
+#IMPORTAMOS LA BASE DE DATOS 
+data <- read_csv("C:/Users/09yoo/Downloads/s13_hemodialisis (2).csv")
+
+#estructura de la data 
+str(data)
+```
+
+## MEDIA ARITMETICA
+
+```{r}
+mean(data$Edad)
+```
+
+## LA MEDIA
+
+```{r}
+median(data$Edad)
+```
+
+## LA MODA
+
+```{r}
+mode_edad<-names(sort(table(data$Edad),decreasing = TRUE))
+```
